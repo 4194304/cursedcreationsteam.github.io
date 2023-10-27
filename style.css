@@ -1,17 +1,26 @@
+/* Hello there! Read the comments written before modifying certain parts of this document! -4194304 */
+
+/* Font and background color settings */
 body
 {
-    font-family:system-ui,"Segoe UI", "Roboto","Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family:system-ui,"Segoe UI", "Roboto" ,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji","SFMono-Regular","Menlo","Monaco","Consolas","Liberation Mono","Courier New",monospace;
     background-color:#212529;
+    overflow-x: hidden;
 } 
+/* header properties, should probably be left alone */
 h1, h2, h3, h4
 {
     color:white;
+    font-weight:normal;
 }
+/* Normal font color and size */
 p
 {
     color:#ADB5BD;
     font-size:1rem;
 }
+/* Navigation bar settings */
+/* You probably shouldn't change this unless you're changing its size */
 .navbar
 {
     display:inline;
@@ -23,48 +32,59 @@ p
     padding-top:10px;
     padding-bottom:10px;
 }
+/* Color of text in unordered lists */
 ul
 {
     color:#ADB5BD;
 }
+/* Color of links, overflow-wrap is used because a link broke the mobile UI */
 a
 {
     color:#6EA8FE;
     transition:500ms;
+    overflow-wrap: break-word;
 }
+/* Link color when hovered */
 a:hover
 {
     color:#91bcfc;
     transition:500ms;
 }
+/* Navigation bar item settings. Do not change this unless you're modifying the navigation bar */
 .navbaritem
 {
     display:inline;
     margin-right:5px;
     transition:500ms;
 }
+/* "Cursed Creations" text in the navigation bar. */
 .bigtextli
 {
-    color:rgb(218, 218, 218);
+    color:rgb(236, 236, 236);
     font-size:125%;
     margin-right:20px;
     transition:500ms;
+    font-weight:normal;
 }
+/* Changes the text color of items when hovered over in the navigation bar */
 .navbaritem:hover
 {
-    color:#c6cfd8;
+    color:#e2ebf3;
     transition:500ms;
 }
+/* Same as last one but for the "Cursed Creations" text */
 .bigtextli:hover
 {
     color:white;
     transition:500ms;
 }
+/* Don't modify this unless you want the page to become messed up */
 .main
 {
     position:relative;
     top:30px;
 }
+/* Background behind navigation bar. Only change this if you know what you're doing. */
 .navbg
 {
     background-color:#2B3035;
@@ -76,19 +96,96 @@ a:hover
     z-index:4;
     padding-top:10px;
 }
+/* h1 font size */
 h1 .h1
 {
     font-size:calc(1.375rem + 1.5vw);
 }
+/* h2 font size */
 h2
 {
     font-size:calc(1.325rem + .9vw);
 }
+/* h3 font size */
 h3
 {
     font-size:calc(1.3rem + .6vw);
 }
+/* h4 font size */
 h4
 {
     font-size:calc(1.275rem + .3vw);
+}
+/* DO NOT CHANGE THIS */
+/* These following two settings are mobile screen related */
+@media screen and (max-width: 600px) {
+    #navbarmobile {
+        display:inline;
+      }
+    .navbar {
+      display:none;
+        }
+    }
+@media screen and (min-width: 601px) {
+    #navbarmobile {
+      display:none;
+        }
+    #navitem {
+        display:none;
+          }
+        }
+#navbarmobile
+{
+    display:inline;
+    max-height:50px;
+    position:fixed;
+    left:-20px;
+    top:-10px;
+    z-index:5;
+    padding-top:10px;
+    padding-bottom:10px;
+    image-rendering:pixelated;
+}
+/* Menu icon, change the right and top elements if uncentered */
+#navitem
+{
+    position:fixed;
+    top:15px;
+    right:30px;
+}
+/* Menu contents */
+#menu
+{
+    z-index:3;
+    display:inline;
+    position:relative;
+    top:75px;
+    text-align:center;
+}
+/* Items in the menu */
+.menuitem
+{
+    transition:500ms;
+}
+/* Text color changes on hover */
+.menuitem:hover
+{
+    color:#e2ebf3;
+    transition:500ms;
+}
+/* Page break, used for the menu */
+hr
+{
+    color:#ADB5BD;
+    margin: 30px -20px 20px;
+    border: 0;
+    border-top: 1px solid #c9c7c7;
+}
+/* Nothing useful here */
+#navitemclose
+{
+    position:fixed;
+    right:30px;
+    top:15px;
+    display:none;
 }
