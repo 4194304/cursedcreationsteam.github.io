@@ -157,7 +157,7 @@ h4
 #menu
 {
     z-index:3;
-    display:inline;
+    display:none;
     position:relative;
     top:75px;
     text-align:center;
@@ -188,4 +188,9 @@ hr
     right:30px;
     top:15px;
     display:none;
+}
+.nocoloringlink
+{
+    color:#ADB5BD;
+    text-decoration:none;
 }
