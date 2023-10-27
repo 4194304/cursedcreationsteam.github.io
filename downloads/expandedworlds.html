@@ -1,48 +1,48 @@
-<html lang="en" data-bs-theme="dark">
+<!-- Hello there! This document is the same, except for the CSS and JS being entirely redone.-->
+<!-- I did it since using CSS with bootstrap is a living nightmare.-->
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Cursed Creations | World Expansion</title>
 		<link rel="icon" type="image/x-icon" href="../cursedcreations.png">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+		<link href="../style.css" rel="stylesheet">
 	</head>
 	<body>
-		<!-- Header -->
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="../index.html">Cursed Creations</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link" href="../index.html">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html">Mods</a>
-							<!-- TODO: Add dropdown menu for some mods (ie Expanded Worlds site) -->
-						</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../wiki.html">Wiki</a>
-                        </li>
-					</ul>
+		<!-- Redone navigation bar!-->
+		<div class="nav">
+				<ul class="navbar">
+					<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
+					<li class="navbaritem">Home</li>
+					<li class="navbaritem">Mods</li>
+					<li class="navbaritem">Wiki</li>
+				</ul>
+				<ul id="navbarmobile">
+					<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
+					<li class="navbaritem" onclick="menuopen()"><img id="navitem" src="../navitem.png" width="32px" height="32px"></img></li>
+					<li class="navbaritem" onclick="menuclose()"><img id="navitemclose" src="../navitem.png" width="32px" height="32px"></img></li>
+				</ul>
+				<div id="menu">
+					<p class="menuitem">Home</p>
+					<p class="menuitem">Mods</p>
+					<p class="menuitem">Wiki</p>
+					<hr>
 				</div>
-			</div>
-		</nav>
+			<p class="navbg">&nbsp;</p>
+		</div>
 		<br>
-		
+		<div class="main">
 		<ul><h1 id="version-header">World Expansion mods for Minecraft: Java Edition</h1>
 		<p>These are special mods that expand Minecraft beyond the 32bit integer limit. 
-			These 64bit and BigInteger mods let you teleport trillions of blocks away, visiting the native Java Edition farlands, and viewing where the farlands ended up after they got "patched" in beta 1.8.
+			<p>These 64bit and BigInteger mods let you teleport trillions of blocks away, visiting the native Java Edition farlands, and viewing where the farlands ended up after they got "patched" in beta 1.8.</p>
 			<a href="#unlimitedmc">Click here to scroll to the BigInteger downloads section</a>
 		</p>
 		<h2 id="how-to-install">How to Install</h2>
 		See wiki: <a href="../wiki.html#how-to-install">https://cursedcreationsteam.github.io/wiki#how-to-install</a>
         <br>
         <br>
-		<h2 id="downloads">
-		Downloads | 64bit Worldgen</h2>
+		<h2 id="downloads">Downloads | 64bit Worldgen</h2>
 		<ul>
 			<h3>Infdev: </h3>
 			<ul>
@@ -177,7 +177,7 @@
 				</h4>
 				<ul id="b1.7.3-64">
 					<li><a href="../mods/64bit/beta/b1.7.3/minecraft-b1.7.3-v1-zero.zip">v1.0 (Zero)</a></li>
-                    Note from RVH: Notice of 15 April 2023 | These versions are safe to play, however this mod has been discontinued. It will be remade in the future.
+                    <p>Note from RVH: Notice of 15 April 2023 | These versions are safe to play, however this mod has been discontinued. It will be remade in the future.</p>
                     <li><a href="../mods/64bit/beta/b1.7.3/b1.7.3LongV1.zip">v1.0 (RVH)</a></li>
 					<li><a href="../mods/64bit/beta/b1.7.3/b1.7.3LongV2.zip">v2.0 (RVH)</a></li>
 				</ul>
@@ -222,7 +222,7 @@
 				</h4>
 				<ul id="1.8-64">
 					<div id="1.8-note"><ul>Note from author:
-						Very buggy, has log spam which can rapidly decrease FPS and can cause disk usage to rise drastically, has a bug at 2^35 which causes stripes of chunks to not load every power of 2, Chunk overwrite limit causes chunk and entity relocation spam, highly unstable. Player will be affected.
+						<p>Very buggy, has log spam which can rapidly decrease FPS and can cause disk usage to rise drastically, has a bug at 2^35 which causes stripes of chunks to not load every power of 2, Chunk overwrite limit causes chunk and entity relocation spam, highly unstable. Player will be affected.</p>
 						<li>v2 - Most issues are fixed, log spam is fixed</li>
 						<li>v3 - Fixes 2^35 bug, Slowfalling still exists (due to server thread becoming overloaded)</li></ul></div>
 					<li><a href="../mods/64bit/release/1.8/minecraft-1.8-64bit-v1-zero.zip">v1.0</a></li>
@@ -279,6 +279,9 @@
 		</div>
 		</ul>
 		<h2>We will no longer be distributing or supporting deobfuscated mods due to all of them being no longer supported by the developer or us at Cursed Creations</h2>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+		<script src="../script.js"></script>
+		<br>
+		<p>&nbsp;</p>
+	</div>
 	</body>
 </html>
