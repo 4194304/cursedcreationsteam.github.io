@@ -1,0 +1,94 @@
+body
+{
+    font-family:system-ui,"Segoe UI", "Roboto","Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color:#212529;
+} 
+h1, h2, h3, h4
+{
+    color:white;
+}
+p
+{
+    color:#ADB5BD;
+    font-size:1rem;
+}
+.navbar
+{
+    display:inline;
+    max-height:50px;
+    position:fixed;
+    left:-20px;
+    top:-10px;
+    z-index:5;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+ul
+{
+    color:#ADB5BD;
+}
+a
+{
+    color:#6EA8FE;
+    transition:500ms;
+}
+a:hover
+{
+    color:#91bcfc;
+    transition:500ms;
+}
+.navbaritem
+{
+    display:inline;
+    margin-right:5px;
+    transition:500ms;
+}
+.bigtextli
+{
+    color:rgb(218, 218, 218);
+    font-size:125%;
+    margin-right:20px;
+    transition:500ms;
+}
+.navbaritem:hover
+{
+    color:#c6cfd8;
+    transition:500ms;
+}
+.bigtextli:hover
+{
+    color:white;
+    transition:500ms;
+}
+.main
+{
+    position:relative;
+    top:30px;
+}
+.navbg
+{
+    background-color:#2B3035;
+    position:fixed;
+    min-width:200%;
+    top:-20px;
+    left:-20px;
+    min-height:50px;
+    z-index:4;
+    padding-top:10px;
+}
+h1 .h1
+{
+    font-size:calc(1.375rem + 1.5vw);
+}
+h2
+{
+    font-size:calc(1.325rem + .9vw);
+}
+h3
+{
+    font-size:calc(1.3rem + .6vw);
+}
+h4
+{
+    font-size:calc(1.275rem + .3vw);
+}
