@@ -167,6 +167,8 @@ h4
 .menuitem
 {
     transition:500ms;
+    position:relative;
+    right:110px;
 }
 /* Text color changes on hover */
 .menuitem:hover
