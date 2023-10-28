@@ -12,29 +12,26 @@
 	<body>
 		<!-- Redone navigation bar!-->
 		<div class="nav">
-				<ul class="navbar">
-					<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
-					<a class="nocoloringlink" href=../index.html><li class="navbaritem">Home</li></a>
-					<a class="nocoloringlink" href=index.html><li class="navbaritem">Mods</li></a>
-					<a class="nocoloringlink" href=../wiki.html><li class="navbaritem">Wiki</li></a>
-				</ul>
-				<ul id="navbarmobile">
-					<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
-					<li class="navbaritem" onclick="menuopen()"><img id="navitem" src="../navitem.png" width="32px" height="32px"></img></li>
-					<li class="navbaritem" onclick="menuclose()"><img id="navitemclose" src="../navitem.png" width="32px" height="32px"></img></li>
-				</ul>
-				<div id="menu">
-					<p><b>MENU IS CURRENTLY EXPERIMENTAL!</b></p>
-					<p>The menu may break easily.</p>
-					<a class="nocoloringlink" href=../index.html><p class="menuitem">Home</p></a>
-					<a class="nocoloringlink" href=index.html><p class="menuitem">Mods</p></a>
-					<a class="nocoloringlink" href=../wiki.html><p class="menuitem">Wiki</p></a>
-					<hr>
-				</div>
-			<p class="navbg">&nbsp;</p>
-		</div>
-		<br>
-		<div class="main">
+			<ul class="navbar">
+				<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
+				<a class="nocoloringlink" href=../index.html><li class="navbaritem">Home</li></a>
+				<a class="nocoloringlink" href=index.html><li class="navbaritem">Mods</li></a>
+				<a class="nocoloringlink" href=../wiki.html><li class="navbaritem">Wiki</li></a>
+			</ul>
+			<ul id="navbarmobile">
+				<li class="navbaritem"><b class="bigtextli">Cursed Creations</b></li>
+				<li class="navbaritem" onclick="menuopen()"><img id="navitem" src="../navitem.png" width="32px" height="32px"></img></li>
+				<li class="navbaritem" onclick="menuclose()"><img id="navitemclose" src="../navitem.png" width="32px" height="32px"></img></li>
+			</ul>
+			<div id="menu">
+				<a class="nocoloringlink" href=../index.html><p class="menuitem">Home</p></a>
+				<a class="nocoloringlink" href=index.html><p class="menuitem">Mods</p></a>
+				<a class="nocoloringlink" href=../wiki.html><p class="menuitem">Wiki</p></a>
+			</div>
+		<p class="navbg">&nbsp;</p>
+	</div>
+	<br>
+		<div id="main">
 		<ul><h1 id="version-header">World Expansion mods for Minecraft: Java Edition</h1>
 		<p>These are special mods that expand Minecraft beyond the 32bit integer limit. 
 			<p>These 64bit and BigInteger mods let you teleport trillions of blocks away, visiting the native Java Edition farlands, and viewing where the farlands ended up after they got "patched" in beta 1.8.</p>
@@ -223,9 +220,9 @@
 					<li>1.8 (Zero)</li>
 				</h4>
 				<ul id="1.8-64">
-					<div id="1.8-note"><ul>Note from author:
+					<div id="1.8-note">Note from author:
 						<p>Very buggy, has log spam which can rapidly decrease FPS and can cause disk usage to rise drastically, has a bug at 2^35 which causes stripes of chunks to not load every power of 2, Chunk overwrite limit causes chunk and entity relocation spam, highly unstable. Player will be affected.</p>
-						<li>v2 - Most issues are fixed, log spam is fixed</li>
+						<ul><li>v2 - Most issues are fixed, log spam is fixed</li>
 						<li>v3 - Fixes 2^35 bug, Slowfalling still exists (due to server thread becoming overloaded)</li></ul></div>
 					<li><a href="../mods/64bit/release/1.8/minecraft-1.8-64bit-v1-zero.zip">v1.0</a></li>
 					<li><a href="../mods/64bit/release/1.8/minecraft-1.8-64bit-v2-zero.zip">v2.0</a></li>

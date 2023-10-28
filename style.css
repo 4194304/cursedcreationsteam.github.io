@@ -79,7 +79,7 @@ a:hover
     transition:500ms;
 }
 /* Don't modify this unless you want the page to become messed up */
-.main
+#main
 {
     position:relative;
     top:30px;
@@ -158,8 +158,9 @@ h4
 {
     z-index:3;
     display:none;
-    position:relative;
+    position:fixed;
     top:75px;
+    right:50px;
     text-align:center;
 }
 /* Items in the menu */
@@ -173,14 +174,6 @@ h4
     color:#e2ebf3;
     transition:500ms;
 }
-/* Page break, used for the menu */
-hr
-{
-    color:#ADB5BD;
-    margin: 30px -20px 20px;
-    border: 0;
-    border-top: 1px solid #c9c7c7;
-}
 /* Nothing useful here */
 #navitemclose
 {
@@ -189,8 +182,28 @@ hr
     top:15px;
     display:none;
 }
+/* Coloring of the menubar links and the links in the fullscreen menu */
 .nocoloringlink
 {
     color:#ADB5BD;
     text-decoration:none;
 }
+/* Next four are related to the scrollbar */
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Scrollbar background color */
+  ::-webkit-scrollbar-track {
+    background-color:#212529;
+  }
+  
+  /* The scrollbar doesn't change colors when hovered over because the transition attribute didn't work. */
+
+  /* Scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: #373e44; 
+    transition:500ms;
+  }
