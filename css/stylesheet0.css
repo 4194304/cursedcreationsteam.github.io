@@ -1,0 +1,109 @@
+header.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        display:contents
+    }
+nav.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        position:sticky;
+        top:0;
+        display:grid;
+        align-items:center;
+        column-gap:2ch;
+        padding:1ch 2ch;
+        background:var(--md-sys-color-surface-container-high);
+        min-height:5svh;
+        grid-template-areas:"brand links .";
+        grid-template-columns:auto auto 1fr
+    }
+nav.svelte-1sf7tcm .svelte-1sf7tcm
+    {
+        color:var(--md-sys-color-on-surface)
+    }
+nav.svelte-1sf7tcm a.svelte-1sf7tcm
+    {
+        text-decoration:none
+    }
+nav.svelte-1sf7tcm a.svelte-1sf7tcm:hover,nav.svelte-1sf7tcm a.svelte-1sf7tcm:focus,nav.svelte-1sf7tcm a.svelte-1sf7tcm:focus-within,nav.svelte-1sf7tcm a.svelte-1sf7tcm:focus-visible
+    {
+        color:var(--md-sys-color-on-surface-variant)
+    }
+nav.svelte-1sf7tcm :scope .brand
+    {   
+        grid-area:brand;
+    }
+nav.svelte-1sf7tcm :scope .menu
+    {
+        grid-area:menu
+    }
+nav.svelte-1sf7tcm :scope .links
+{
+    grid-area:links;
+}
+.brand.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        font-weight:bolder;
+        font-size:1.4rem;
+        grid-area:brand
+    }
+md-outlined-icon-button.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        display:none;
+        justify-self:end;
+        grid-area:menu
+    }
+.links.svelte-1sf7tcm.svelte-1sf7tcm
+{
+    list-style-type:none;
+    display:flex;
+    padding:0;
+    column-gap:4ch;
+    grid-area:links
+}
+.links.svelte-1sf7tcm li.svelte-1sf7tcm
+{
+    display:contents
+}
+@media (max-width: 800px)
+{
+    nav.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        grid-template-areas:"brand menu" "links links";
+        grid-template-columns:1fr auto;
+        grid-template-rows:auto min-content
+    }
+    md-outlined-icon-button.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        display:revert-layer
+    }
+    .links.svelte-1sf7tcm.svelte-1sf7tcm
+    {
+        flex-direction:column;
+        row-gap:2ch;
+    }.links.svelte-1sf7tcm.svelte-1sf7tcm:not(.shown)
+    {
+        display:none;
+    }
+}
+main.svelte-1sf7tcm.svelte-1sf7tcm
+{
+    padding:2ch;
+}
+code
+{
+    background:var(--md-sys-color-surface-container-highest);
+    color:var(--md-sys-color-on-surface);
+    padding:0 .25ch;
+}
+body
+{
+    background:var(--md-sys-color-surface-container);
+    color:var(--md-sys-color-on-surface);
+}
+a
+{
+    color:var(--md-sys-color-primary)
+}
+:where(ul,ol,li)
+{
+    padding:revert
+}

@@ -1,0 +1,107 @@
+/* https://material-web.dev */
+:root,
+:host {
+    --md-sys-color-background: #101417;
+    --md-sys-color-on-background: #dfe3e7;
+    --md-sys-color-surface: #101417;
+    --md-sys-color-surface-dim: #101417;
+    --md-sys-color-surface-bright: #353a3d;
+    --md-sys-color-surface-container-lowest: #0a0f12;
+    --md-sys-color-surface-container-low: #181c1f;
+    --md-sys-color-surface-container: #1c2023;
+    --md-sys-color-surface-container-high: #262b2e;
+    --md-sys-color-surface-container-highest: #313539;
+    --md-sys-color-on-surface: #dfe3e7;
+    --md-sys-color-surface-variant: #3f484f;
+    --md-sys-color-on-surface-variant: #bec8d0;
+    --md-sys-color-inverse-surface: #dfe3e7;
+    --md-sys-color-inverse-on-surface: #2d3134;
+    --md-sys-color-outline: #88929a;
+    --md-sys-color-outline-variant: #3f484f;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-surface-tint: #7fd0ff;
+    --md-sys-color-primary: #7fd0ff;
+    --md-sys-color-on-primary: #00344a;
+    --md-sys-color-primary-container: #007ba8;
+    --md-sys-color-on-primary-container: #ffffff;
+    --md-sys-color-inverse-primary: #00658c;
+    --md-sys-color-secondary: #aacbe2;
+    --md-sys-color-on-secondary: #113446;
+    --md-sys-color-secondary-container: #234356;
+    --md-sys-color-on-secondary-container: #b8d9f0;
+    --md-sys-color-tertiary: #e9b3ff;
+    --md-sys-color-on-tertiary: #4a1862;
+    --md-sys-color-tertiary-container: #935fab;
+    --md-sys-color-on-tertiary-container: #ffffff;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffdad6;
+}
+/* Hiding extra CSS in here for the menu so the menu is universal */
+@media (max-width: 800px)
+{
+    .menuicon
+    {
+        display:block;
+    }
+}
+@media (min-width: 800px)
+{
+    .menuicon
+    {
+        display:none;
+    }
+}
+.menuicon
+{
+    border:1px solid #828D94;
+    border-radius:50%;
+    padding-left:11px;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-right:3px;
+    max-width:40px;
+    max-height:40px;
+}
+.menuicon1
+{
+    filter:invert(90%);
+    position:relative;
+    right:4px;
+    top:4px;
+}
+#closemenu
+{
+    position:relative;
+    top:-28px;
+    display:none;
+}
+#openmenu
+{
+    position:relative;
+    top:0px;
+}
+@keyframes menuanim {
+    0% {
+      background-color:rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        background-color:transparent;
+    }
+  }
+#menuicon
+{
+    border-radius:50%;
+    max-width:40px;
+    max-height:40px;
+}
+#menuicon:active
+{
+    animation: none;
+}
+#menuicon:focus
+{
+    animation: menuanim 1s ease-in-out backwards;
+}
