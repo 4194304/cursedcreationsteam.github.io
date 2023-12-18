@@ -1,13 +1,11 @@
-
-<!-- HTML boilerplate for every page that gets filled with svelte code -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/png" href="assets/cursedcreations.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/theme.css">
+	<title>Cursed Creations | Home</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Formerly Connection Terminated, we are a group of people dedicated to breaking Minecraft. Est 2020.">
     <meta property="og:title" content="Cursed Creations">
@@ -20,42 +18,46 @@
     <meta property="twitter:url" content="https://cursedcreationsteam.github.io">
     <meta name="twitter:description" content="Formerly Connection Terminated, we are a group of people dedicated to breaking Minecraft. Est 2020.">
     <meta name="twitter:image" content="/cursedcreations.png">
-	<link href="css/stylesheet0.css" rel="stylesheet">
-	<link href="css/stylesheet3.css" rel="stylesheet">
-		<title>Cursed Creations | Home</title><!-- HEAD_svelte-1pr9bhu_START --><!-- HEAD_svelte-1pr9bhu_END -->
+
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/theme.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/misc.css">
+	<link rel="stylesheet" href="css/mobile.css">
 </head>
 
-<body data-sveltekit-preload-data="hover">
+<body>
     <div style="display: contents">     
-		<header class="svelte-1sf7tcm">
-			<nav class="svelte-1sf7tcm">
-				<a class="brand svelte-1sf7tcm" href="/" data-svelte-h="svelte-1n6tp3x">Cursed Creations</a>
-				<!-- Extra code implemented to make my life a lot easier -->
+		<header class="headitem">
+			<nav class="headitem">
+				<a class="brand headitem" href="/">Cursed Creations</a>
+
 			<div tabindex="0" id="menuicon">
 				<div id="openmenu" class="menuicon" >
-				<md-outlined-icon-button aria-label="Toggle navigation" class="svelte-1sf7tcm" data-svelte-h="svelte-195svzw"> 
+				<md-outlined-icon-button aria-label="Toggle navigation" class="headitem"> 
 					<div class="menuicon1" onclick="openmenu()">
-					<md-icon class="svelte-1sf7tcm"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="svelte-1sf7tcm">
-						<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="svelte-1sf7tcm"></path></svg></md-icon></md-outlined-icon-button> 
+					<md-icon class="headitem"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="headitem">
+						<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="headitem"></path></svg></md-icon></md-outlined-icon-button> 
 					</div>
 					<div id="closemenu" class="menuicon1" onclick="closemenu()">
-						<md-icon class="svelte-1sf7tcm"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="svelte-1sf7tcm">
-							<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="svelte-1sf7tcm"></path></svg></md-icon></md-outlined-icon-button> 
+						<md-icon class="headitem"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" class="headitem">
+							<path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" class="headitem"></path></svg></md-icon></md-outlined-icon-button> 
 						</div>
 					</div>
 				</div>
-					<!-- Had to make this for JS -->
+
 					<div id="mobilemenu">
-						<ul id="menucontents" class="links svelte-1sf7tcm ">
-							<li class="svelte-1sf7tcm"><a href="/" class="svelte-1sf7tcm">Home</a></li>
-							<li class="svelte-1sf7tcm"><a href="/downloads" class="svelte-1sf7tcm">Mods</a></li>
-							<li class="svelte-1sf7tcm"><a href="wiki" class="svelte-1sf7tcm">Wiki</a></li>
+						<ul id="menucontents" class="links headitem">
+							<li class="headitem"><a href="/" class="headitem">Home</a></li>
+							<li class="headitem"><a href="/downloads" class="headitem">Mods</a></li>
+							<li class="headitem"><a href="wiki" class="headitem">Wiki</a></li>
 						</ul>
 						</nav>
 					</header> 
 				</div>
-					<main class="svelte-1sf7tcm">   
-					<p class="svelte-s7xm4b" data-svelte-h="svelte-4d4e7z">Hello, you&#39;re probably looking for this: <a href="/downloads">new archive</a></p>
+
+					<main class="headitem">   
+					<p class="centeredtext">Hello, you&#39;re probably looking for this: <a href="/downloads">new archive</a></p>
 				</main> 
 			</div>
 	</body>
